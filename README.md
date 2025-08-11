@@ -17,13 +17,13 @@ Product Name, Category Name, Brand Name, Supplier Name.
 
 SELECT
 
-  sp.TenSanPham AS 'Product Name',
+   sp.TenSanPham AS 'Product Name',
 
-  sp.TenDanhMuc AS 'Category Name',
+   sp.TenDanhMuc AS 'Category Name',
 
-  th.TenThuongHieu AS 'Brand Name',
+   th.TenThuongHieu AS 'Brand Name',
 
-  sp.NhaCungCap AS 'Supplier Name'
+   sp.NhaCungCap AS 'Supplier Name'
 
 FROM
     
