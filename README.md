@@ -15,17 +15,29 @@ Identify products that have never appeared in any orders.
 Product Name, Category Name, Brand Name, Supplier Name.
 - SQL Query:
 SELECT
-    sp.TenSanPham AS 'Product Name',
-    sp.TenDanhMuc AS 'Category Name',
-    th.TenThuongHieu AS 'Brand Name',
-    sp.NhaCungCap AS 'Supplier Name'
+
+  sp.TenSanPham AS 'Product Name',
+
+  sp.TenDanhMuc AS 'Category Name',
+
+  th.TenThuongHieu AS 'Brand Name',
+
+  sp.NhaCungCap AS 'Supplier Name'
+
 FROM
+    
     SanPham sp
+
 LEFT JOIN
+    
     SanPhamTrongDonHang spd ON sp.MaSanPham = spd.MaSanPham
+
 LEFT JOIN
+    
     ThuongHieu th ON sp.MaThuongHieu = th.MaTH
+
 WHERE
+    
     spd.MaDonHang IS NULL;
 
   ### 2. Count the Number of Products by Each Brand
