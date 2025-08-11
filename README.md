@@ -153,11 +153,11 @@ SELECT
 
 FROM DonHang
 
-JOIN SanPhamTrongDonHang ON DonHang.MaDonHang = SanPhamTrongDonHang.MaDonHang
+   JOIN SanPhamTrongDonHang ON DonHang.MaDonHang = SanPhamTrongDonHang.MaDonHang
 
-JOIN SanPham ON SanPhamTrongDonHang.MaSanPham = SanPham.MaSanPham
+   JOIN SanPham ON SanPhamTrongDonHang.MaSanPham = SanPham.MaSanPham
 
-JOIN TaiKhoan ON DonHang.MaNhaCungCap = TaiKhoan.MaTaiKhoan
+   JOIN TaiKhoan ON DonHang.MaNhaCungCap = TaiKhoan.MaTaiKhoan
 
 WHERE
 
@@ -240,11 +240,11 @@ SELECT
 
 FROM DonHang
 
-JOIN SanPhamTrongDonHang ON DonHang.MaDonHang = SanPhamTrongDonHang.MaDonHang
+   JOIN SanPhamTrongDonHang ON DonHang.MaDonHang = SanPhamTrongDonHang.MaDonHang
 
-JOIN SanPham ON SanPhamTrongDonHang.MaSanPham = SanPham.MaSanPham
+   JOIN SanPham ON SanPhamTrongDonHang.MaSanPham = SanPham.MaSanPham
 
-JOIN TaiKhoan ON DonHang.MaNhaCungCap = TaiKhoan.MaTaiKhoan
+   JOIN TaiKhoan ON DonHang.MaNhaCungCap = TaiKhoan.MaTaiKhoan
 
 WHERE
 
