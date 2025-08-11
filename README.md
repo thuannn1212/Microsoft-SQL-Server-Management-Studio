@@ -14,6 +14,7 @@ Identify products that have never appeared in any orders.
 - Displayed Information:
 Product Name, Category Name, Brand Name, Supplier Name.
 - SQL Query:
+
 SELECT
 
   sp.TenSanPham AS 'Product Name',
